@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html { 
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    
+    font-size: 100%;
+}
+
+@-webkit-keyframes Billboard {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-moz-keyframes Billboard {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@keyframes Billboard { 
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+
+@font-face {
+    font-family: 'aleo';
+    src: url('fonts/Aleo-Bold-webfont.eot');
+    src: url('fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Aleo-Bold-webfont.woff') format('woff'),
+    url('fonts/Aleo-Bold-webfont.ttf') format('truetype'),
+    url('fonts/Aleo-Bold-webfont.svg#aleobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aleo-light';
+    src: url('fonts/Aleo-Light-webfont.eot');
+    src: url('fonts/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Aleo-Light-webfont.woff') format('woff'),
+    url('fonts/Aleo-Light-webfont.ttf') format('truetype'),
+    url('fonts/Aleo-Light-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    color: dimgray;
+    font-family: "Aleo-Light", georgia, sans-serif;
+}
+
+h1 span {
+    margin-left: 1.15rem;
+    font-size: 2.5rem;
+    font-family: "Aleo";
+    line-height: 3.25rem;
+/*    color: #F2FF11;*/
+    color: white;
+    display: block;
+/*
+    background-color: #CADE1D;
+    padding: .5rem;
+*/
+}
+
+/*
+h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-family: "Aleo";
+}
+*/
+
+h2 {
+    margin: 1.15rem;
+    font-family: "Aleo";
+    font-size: 2rem;
+    letter-spacing: +.09rem;
+}
+
+h3 {
+    font-family: "Aleo";
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: +.15rem;
+    background: linear-gradient(304deg, #d8d00d, #0da4d8, #d8d00d);
+    background-size: 1000% 400%;
+    -webkit-animation: Billboard 14s ease infinite;
+    -moz-animation: Billboard 14s ease infinite;
+    animation: Billboard 14s ease infinite;
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+}
+
+hr {
+    margin-top: 2.5rem;
+    width: 60%;
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+    border-style: solid;
+    color: lightgrey;
+}
+
+.first-hr {
+    color: #FFEBBC;
+    border-width: 4px;
+    border-radius: 35px;
+}
+
+/*
+.container {
+  border-style: solid;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+*/
+
+.signature {
+    width: 30%;
+    margin-left: 2rem;
+}
+
+.image {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    float: left;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-right {
+    float: right;
+    display: inline;
+    margin: 1rem 1rem 0rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.first-paragraph::first-line { 
+    background-color: rgba(188, 134, 132, .13);
+}
+
+.first-paragraph::first-letter{
+    font-size: 2.25rem;
+}
+
+/* article, aside {
+  text-align: left;
+  background-color: indianred;
+}
+
+article {
+  float: left;
+  width: 70%;
+  overflow: auto;
+  background-image: url(images/project-1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-size: cover;
+  height: 700px;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  padding: 20px;
+  margin: 0, 10px;
+  color: white;
+}
+*/
+
+.intro1 {
+    margin: 1.25rem 1.15rem 2.15rem 1.15rem;
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+    color: #FFEBBC;
+}
+
+.intro2 {
+    margin: 1.25rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+.shy {
+    color: #FFDF91;
+    padding: 2rem 0rem;
+    line-height: 3rem;
+    letter-spacing: +.09rem;
+    background: linear-gradient(304deg, #d8d00d, #0da4d8, #d8d00d);
+    background-size: 1000% 250%;
+    -webkit-animation: Billboard 10s ease infinite;
+    -moz-animation: Billboard 10s ease infinite;
+    animation: Billboard 10s ease infinite;
+}
+
+.james {
+    background-color: white;
+    color: #0598B2;
+    padding: 2rem 0rem;
+}
+
+ul {
+list-style-type: none;
+color: white;
+}
+
+.nav-bottom a:link,
+.nav-bottom a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: .875rem;
+    letter-spacing: +.04rem;
+    line-height: 1.5rem;
+}
+
+.nav-bottom ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.nav-bottom a:hover {
+    color: dimgray;
+}
+
+footer {
+    margin:0;
+    padding: 2.5rem 0rem 4rem;
+    background: linear-gradient(304deg, #d8d00d, #0da4d8, #d8d00d);
+    background-size: 1000% 400%;
+    -webkit-animation: Billboard 14s ease infinite;
+    -moz-animation: Billboard 14s ease infinite;
+    animation: Billboard 14s ease infinite;
+}
+
+/*#####################iPad###################*/
+
+
+    @media screen and (min-width: 580px) {
+    
+h1 span {
+    font-size: 4rem;
+    line-height: 4rem;
+    }
+        
+ .signature {
+    width: 20%;
+    margin-left: 2rem;
+}
+        
+.intro1 {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+    width: 80%;
+}
+        
+.intro2 {
+    width: 80%;
+}
+
+.text-right {
+    width: 75%;
+    float: left;
+}
+
+/*#####################iMac###################*/
+        
+@media screen and (min-width: 1040px) {
+    
+.shy {
+    color: #FFDF91;
+    padding: 5rem 0rem;
+    line-height: 3rem;
+    letter-spacing: +.09rem;
+    background: linear-gradient(304deg, #d8d00d, #0da4d8, #d8d00d);
+    background-size: 750% 300%;
+    -webkit-animation: Billboard 10s ease infinite;
+    -moz-animation: Billboard 10s ease infinite;
+    animation: Billboard 10s ease infinite;
+}
+    
+h1 span {
+    font-size: 5rem;
+    line-height: 6.25rem;
+    margin-left: 6rem;
+    width: 75%;
+}
+    
+.intro1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    width: 70%;
+    margin-left: 6rem;
+}
+    
+.intro2 {
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    width: 65%;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+    
+    hr {
+    width: 0%;
+}
+  
+.first-hr {
+    margin-top: 3rem;
+    margin-left: 6rem;
+    padding-top: 8px;
+    border-width: 3px;
+    width: 35%;
+    border-radius: 35px;
+}
+    
+/*    img {
+    width: 65%;
+    float: left;
+*/
+    
+.image {
+    max-width: 65%;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+    
+.text-right {
+    max-width: 30%;
+    width: 100%;
+/*    overflow: auto;*/
+    float: right;
+    display: inline;
+    margin: 1rem;
+    margin-top: 0rem;
+    margin-right: 1.5rem;
+/*    margin-bottom: 1rem;*/
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+}
+    
+h2 {
+    margin: 6rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: +.09rem;
+    line-height: 3.7rem;
+}
+    
+.shy {
+    padding: 5rem 0rem;
+    line-height: 3rem;
+    letter-spacing: +.09rem;
+}    
+    
+.signature {
+    width: 15%;
+    margin-top: 0rem;
+    margin-left: 8rem;
+}
+    
+h3 {
+    padding-left: 6rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-family: "Aleo";
+    color: white;
+    letter-spacing: +.15rem;
+    background: linear-gradient(304deg, #d8d00d, #0da4d8, #d8d00d);
+    background-size: 700% 100%;
+    -webkit-animation: Billboard 10s ease infinite;
+    -moz-animation: Billboard 10s ease infinite;
+    animation: Billboard 10s ease infinite;
+}
+
+.first-paragraph::first-line { 
+    background-color: rgba(188, 134, 132, .13);
+}
+
+.first-paragraph::first-letter{
+    font-size: 2.25rem;
+}
+    
+.nav-bottom a:link,
+.nav-bottom a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+.nav-bottom ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 6rem;
+}
+
+footer {
+    margin:0;
+    padding: 2.2rem 0rem 3rem;
+}
+    
+article{
+    overflow: hidden;
+    }
